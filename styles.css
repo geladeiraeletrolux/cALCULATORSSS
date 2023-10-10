@@ -1,0 +1,20 @@
+CSS
+
+*{
+    margin: 80;
+    padding: 50;
+}
+.fundo{
+    background-image: linear-gradient(45deg,black,blue,white,blue, black);
+    height: 100vh;
+    color:black;
+    font-family:cursive;
+    
+}
+h1{font-size: 69;}
+p{font-size: 99;}
+body{font-size: 99;}
+.Calculadora{
+    position: absolute;
+    background-color: rgba(rgb(108, 107, 185), rgb(1, 255, 22), rgb(208, 16, 214), alpha);
+}
