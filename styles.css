@@ -41,5 +41,10 @@ body{font-size: 99;}
 
 #resultado{
     background-color: rgb(11, 215, 241);
-
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    color: black;
+    text-align: right;
+    padding: 5px;
 }
