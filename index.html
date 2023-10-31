@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -11,9 +10,9 @@
 
     <body>
         <div class="fundo">
-            <h1><i><strong>CrIAdO POR jp</strong></i></h1>
+            <h1>Criado por jp</h1>
             <div class="Calculadora">
-                <h1><i>Calculadora</i></h1>
+                <h1>Calculadora</h1>
                 <p id="resultado"></p>
                 <table>
                     <tr>
@@ -38,7 +37,7 @@
                         <td><button class="botao" onclick="insert ('1')">1</button></td>
                         <td><button class="botao" onclick="insert ('2')">2</button></td>
                         <td><button class="botao" onclick="insert ('3')">3</button></td>
-                        <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
+                        <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
                     </tr>
                     <tr>
                         <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert ('0')">0</button></td>
@@ -51,18 +50,28 @@
             function insert (num)
             {
                 var numero=document.getElementById ('resultado').innerHTML;
-                document.getElementById ('resultado').innerHTML = nuemro+num;
+                document.getElementById ('resultado').innerHTML = numero+num;
             }
             function clean ()
-            {   
-                document.getElementById('resultado').innerHTML="";
+                                {
+                                    document.getElementById('resultado').innerHTML="";
+                                }
+            function back()
+            {
+                var resultado = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML= resultado.substring(0, resultado.length -1);
             }
-            function back ()
+            function calcular ()
             {   
-                var resultado = document.getElementById('rsultado').innerHTML;
-                document.getElementById('resultado').innerHTML= resultado.substring(0,resultado.length-1);
+                var resultado = document.getElementById('resultado').innerHTML;
+                 if(resultado)
+                 {
+                    document.getElementById('resultado').innerHTML = eval(resultado);
+                 }
+                 else{
+                        document.getElementById('resultado').innerHTML="NOT IDENTIFIED";
+                 }
             }
         </script>
     </body>
 </html>
-

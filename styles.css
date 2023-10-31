@@ -1,50 +1,44 @@
-CSS
-
 *{
     margin: 0;
     padding: 0;
 }
 .fundo{
-    background-image: linear-gradient(45deg,black,blue,white,blue, black);
+    background-image: linear-gradient(45deg, rgb(88, 16, 204), rgb(19, 190, 176));
     height: 100vh;
-    color:black;
-    font-family:cursive;
+    color: rgb(9, 36, 153);
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    
 }
-h1{font-size: 69;}
-p{font-size: 99;}
-body{font-size: 99;}
 .Calculadora{
     position: absolute;
-    background-color: rgba(rgb(108, 107, 185), rgb(1, 255, 22), rgb(208, 16, 214), alpha);
+    background-color: rgba(0, 215, 243, 0.7);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
     padding: 15px;
+    font-size: 20px;
 }
 .botao{
-     width: 50px;
-     height: 50px;
-     margin: 5px;
-     font-size: 25px;
-     cursor: pointer;
-     background-color: rgb(23, 211, 218);
-     border: none;
-     color: antiquewhite;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(115, 57, 223);
+    border: none;
+    color: rgb(255, 255, 255);
 }
 .botao:hover{
-    background-color: blueviolet;
-    color: yellowgreen;
+    background-color: black;
+    color: rgb(115, 17, 145);
 }
-
 #resultado{
-    background-color: rgb(11, 215, 241);
+    background-color: white;
     width: 207px;
     height: 30px;
     margin: 5px;
-    color: black;
+    color: rgb(0, 255, 255);
     text-align: right;
     padding: 5px;
 }
